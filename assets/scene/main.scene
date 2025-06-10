@@ -52,7 +52,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 56
+      "__id__": 57
     },
     "_id": "cc11604c-41a7-4743-8892-7f10099c3d14"
   },
@@ -108,13 +108,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 53
-      },
-      {
         "__id__": 54
       },
       {
         "__id__": 55
+      },
+      {
+        "__id__": 56
       }
     ],
     "_prefab": null,
@@ -260,7 +260,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -572.01,
+      "y": -521.823,
       "z": 0
     },
     "_lrot": {
@@ -362,7 +362,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 460,
+      "y": 510.187,
       "z": 0
     },
     "_lrot": {
@@ -494,7 +494,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 390,
+      "y": 440.187,
       "z": 0
     },
     "_lrot": {
@@ -596,7 +596,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 320,
+      "y": 370.187,
       "z": 0
     },
     "_lrot": {
@@ -634,7 +634,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 322.56402587890625,
+      "width": 403.850341796875,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -664,7 +664,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "ta打出了这张牌",
+    "_string": "“我打出的是C++！”",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 47.2,
@@ -727,8 +727,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 60,
-      "y": -372.979,
+      "x": 180,
+      "y": -322.792,
       "z": 0
     },
     "_lrot": {
@@ -791,13 +791,13 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 179,
-      "g": 133,
-      "b": 65,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "57520716-48c8-4a19-8acf-41c9f8777fb0@f9941",
+      "__uuid__": "ab0618b7-4a9f-4225-aa45-e1af5b7ef38e@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -837,7 +837,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -372.979,
+      "y": -322.792,
       "z": 0
     },
     "_lrot": {
@@ -900,13 +900,13 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 179,
-      "g": 133,
-      "b": 65,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "57520716-48c8-4a19-8acf-41c9f8777fb0@f9941",
+      "__uuid__": "39b45154-27f0-4c36-9de5-e88ebed4c624@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -945,8 +945,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -60,
-      "y": -372.979,
+      "x": -180,
+      "y": -322.792,
       "z": 0
     },
     "_lrot": {
@@ -1009,13 +1009,13 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 179,
-      "g": 133,
-      "b": 65,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "57520716-48c8-4a19-8acf-41c9f8777fb0@f9941",
+      "__uuid__": "4f57b6a9-d7bd-491d-804a-117c5b1b5ecf@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -1055,7 +1055,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -60,
+      "y": -9.813,
       "z": 0
     },
     "_lrot": {
@@ -1194,7 +1194,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -100,
-      "y": -170,
+      "y": -119.813,
       "z": 0
     },
     "_lrot": {
@@ -1506,7 +1506,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 100,
-      "y": -170,
+      "y": -119.813,
       "z": 0
     },
     "_lrot": {
@@ -1811,7 +1811,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 130,
+      "y": 180.187,
       "z": 0
     },
     "_lrot": {
@@ -1874,13 +1874,13 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 179,
-      "g": 133,
-      "b": 65,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "57520716-48c8-4a19-8acf-41c9f8777fb0@f9941",
+      "__uuid__": "681b6b43-565d-4502-a93f-c79ea100a3e8@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -1921,13 +1921,16 @@
       },
       {
         "__id__": 52
+      },
+      {
+        "__id__": 53
       }
     ],
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -250.325,
-      "y": 559.873,
+      "y": 605.203,
       "z": 0
     },
     "_lrot": {
@@ -2211,6 +2214,18 @@
     "_id": "51NjURJOxBW5CMF4XqWEbT"
   },
   {
+    "__type__": "a630bFwmExNsqmXNHXdZWJ0",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 46
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_id": "74DQLX2HlOPLd992tDTgct"
+  },
+  {
     "__type__": "cc.UITransform",
     "_name": "",
     "_objFlags": 0,
@@ -2281,28 +2296,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 57
-    },
-    "shadows": {
       "__id__": 58
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 59
     },
-    "fog": {
+    "_skybox": {
       "__id__": 60
     },
-    "octree": {
+    "fog": {
       "__id__": 61
     },
-    "skin": {
+    "octree": {
       "__id__": 62
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 63
     },
-    "postSettings": {
+    "lightProbeInfo": {
       "__id__": 64
+    },
+    "postSettings": {
+      "__id__": 65
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

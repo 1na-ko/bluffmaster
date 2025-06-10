@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, Node, Label, director } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('game')
@@ -6,7 +6,6 @@ export class game extends Component {
     @property({ type: Node })
     loginButton: Node = null!;
     start() {
-        console.log('Game111111111111111');
         console.log('Game started', wx.getStorageSync('Login'));
         if (wx.getStorageSync('Login')) {
             this.updateButtonState();
@@ -18,35 +17,50 @@ export class game extends Component {
     }
 
     public onLoginButtonClick() {
-        console.log('Login button clicked');
-        if (typeof wx !== 'undefined') {
-            // 微信登录逻辑
-            wx.login({
-                success: (res) => {
-                    if (res.code) {
-                        console.log('Login code:', res.code);
-                        console.log('Login success:', res);
-                        wx.setStorageSync('Login', true);
-                        // 这里发送code到你的服务器
-                        // this.sendCodeToServer(res.code);
-                        this.updateButtonState();
-                    } else {
-                        console.error('Login failed:', res.errMsg);
-                        wx.setStorageSync('Login', false);
+        if (wx.getStorageSync('Login')) {
+            director.loadScene('main');
+        } else {
+            console.log('Login button clicked');
+            if (typeof wx !== 'undefined') {
+                // 微信登录逻辑
+                wx.login({
+                    success: (res) => {
+                        if (res.code) {
+                            console.log('Login code:', res.code);
+                            wx.setStorageSync('Login', true);
+                            this.updateButtonState();
+                        } else {
+                            console.error('Login failed:', res.errMsg);
+                            wx.setStorageSync('Login', false);
+                        }
+                    },
+                    fail: (err) => {
+                        console.error('wx.login failed:', err);
                     }
-                },
-                fail: (err) => {
-                    console.error('wx.login failed:', err);
-                }
-            });
+                });
+            }
         }
     }
 
     private updateButtonState() {
         console.log('Updating button state');
-        const label = this.loginButton.getComponent(Label);
+        if (!this.loginButton) {
+            console.error('Login button node is not assigned!');
+            return;
+        }
+        
+        // 尝试从子节点获取Label组件
+        const labelNode = this.loginButton.children[0];
+        if (!labelNode) {
+            console.error('No child node found for login button');
+            return;
+        }
+        
+        const label = labelNode.getComponent(Label);
         if (label) {
-            label.string = wx.getStorageSync('isLoggedIn') ? '开始游戏' : '登录';
+            label.string = wx.getStorageSync('Login') ? '开始游戏' : '微信登录';
+        } else {
+            console.error('Label component not found on login button child node');
         }
     }
 
